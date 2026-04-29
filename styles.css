@@ -34,6 +34,14 @@ body {
   margin-bottom: 48px;
 }
 
+.logo {
+  width: 96px;
+  height: 96px;
+  display: block;
+  margin: 0 0 16px;
+  border-radius: 22%;
+}
+
 .hero h1 {
   margin: 0 0 8px;
   font-size: 40px;
