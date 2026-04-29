@@ -13,28 +13,66 @@
     <link rel="apple-touch-icon" href="/new_logo.png" />
   </head>
   <body>
-    <main class="container">
-      <header class="hero">
-        <img src="/new_logo.png" alt="JustDid logo" class="logo" />
-        <h1>JustDid</h1>
-        <p class="tagline">
-          Track when household tasks were last done.
-        </p>
-      </header>
+    <header class="topnav">
+      <div class="container">
+        <a href="/" class="brand">
+          <img src="/new_logo.png" alt="" class="brand-logo" />
+          <span>JustDid</span>
+        </a>
+        <nav>
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+          <a href="/support/">Support</a>
+        </nav>
+      </div>
+    </header>
 
-      <section class="links">
-        <h2>Legal &amp; Support</h2>
-        <ul>
-          <li><a href="/privacy.html">Privacy Policy</a></li>
-          <li><a href="/terms.html">Terms of Service</a></li>
-          <li><a href="/support.html">Support</a></li>
-        </ul>
+    <main class="container">
+      <section class="hero">
+        <img src="/new_logo.png" alt="JustDid" class="hero-logo" />
+        <h1>JustDid</h1>
+        <p class="tagline">Track when household tasks were last done.</p>
       </section>
 
-      <footer>
-        <p>&copy; <span id="year"></span> Zachary</p>
-      </footer>
+      <section class="links">
+        <a class="link-card" href="/privacy/">
+          <span class="link-text">
+            <span class="link-title">Privacy Policy</span>
+            <span class="link-desc">How JustDid handles your data.</span>
+          </span>
+          <span class="chev">&rsaquo;</span>
+        </a>
+        <a class="link-card" href="/terms/">
+          <span class="link-text">
+            <span class="link-title">Terms of Service</span>
+            <span class="link-desc"
+              >Your agreement when using the app.</span
+            >
+          </span>
+          <span class="chev">&rsaquo;</span>
+        </a>
+        <a class="link-card" href="/support/">
+          <span class="link-text">
+            <span class="link-title">Support</span>
+            <span class="link-desc"
+              >Get help, report a bug, share feedback.</span
+            >
+          </span>
+          <span class="chev">&rsaquo;</span>
+        </a>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>&copy; <span id="year"></span> JustDid</span>
+        <span>
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+          <a href="/support/">Support</a>
+        </span>
+      </div>
+    </footer>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
