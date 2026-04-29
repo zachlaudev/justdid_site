@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JustDid</title>
+    <meta
+      name="description"
+      content="JustDid — track when household tasks were last done."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <h1>JustDid</h1>
+        <p class="tagline">
+          Track when household tasks were last done.
+        </p>
+      </header>
+
+      <section class="links">
+        <h2>Legal &amp; Support</h2>
+        <ul>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Service</a></li>
+          <li><a href="/support.html">Support</a></li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>&copy; <span id="year"></span> Zachary</p>
+      </footer>
+    </main>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
